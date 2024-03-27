@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+ }
+
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #6f7c81;
+  color: #f3f3f3;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #dbd4d4;
+  
+}
+
+.titulo{
+  margin-top: 20px;
+}
+
+.button-container {
+  display: flex; /* Utiliza flexbox para organizar os botões */
+  justify-content: center;
+}
+
+.button-container button {
+  margin-right: 10px; /* Adiciona uma margem à direita de cada botão */
+}
+
+/* Remove a margem do último botão para evitar espaçamento extra */
+.button-container button:last-child {
+  margin-right: 0;
+}
+
+
+#contrastOptions {
+  text-align: center;
+}
+#contrastOptions button {
+  margin: 5px;
+}
+
+/* Estilos de contraste */
+.high-contrast {
+  background-color: #000;
+  color: #fff;
+}
+
+.black-and-white {
+  background-color: #fff;
+  color: #000;
+}
+
+.blue-contrast {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+#startButton {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+#transcriptionContainer {
+  position: relative; /* Permite posicionar a transcrição dentro deste contêiner */
+  margin-bottom: 50px; /* Espaço extra para garantir que a transcrição não fique muito próxima do rodapé */
+}
+
+#transcription {
+  position: fixed;
+  bottom: 50px; /* Ajuste conforme necessário para evitar que a transcrição fique muito próxima do rodapé */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  z-index: 999;
+}
+.hidden{
+  display: none;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Primeira coluna se ajusta automaticamente ao tamanho do conteúdo, segunda coluna ocupa o restante do espaço */
+  gap: 10px; /* Espaçamento entre as colunas */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+#button-container {
+  grid-column: 1; /* Ocupa a primeira coluna */
+}
+
+#items {
+  grid-column: 2; /* Ocupa a segunda coluna */
+}
+
+ footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  } 
+
+
+
+  /* Estilos para a div de notícias */
+.container {
+  text-align: center; /* Centraliza horizontalmente o conteúdo */
+}
+.noticias {
+  display: flex; /* Utilizaremos o flexbox para organizar as notícias em linha */
+  justify-content: center; /* Centraliza as notícias horizontalmente */
+  flex-wrap: wrap; /* Permite que as notícias quebrem para a próxima linha se não houver espaço suficiente */
+}
+
+.noticia {
+  width: 300px; /* Define a largura de cada notícia */
+  margin: 20px; /* Adiciona uma margem ao redor de cada notícia */
+  padding: 15px; /* Adiciona preenchimento interno */
+  border: 1px solid #ccc; /* Adiciona uma borda */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+
+.noticia img {
+  width: 100%; /* Faz com que as imagens ocupem toda a largura do contêiner da notícia */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 5px; /* Adiciona bordas arredondadas às imagens */
+  margin-bottom: 10px; /* Adiciona um espaço abaixo da imagem */
+}
+
+.noticia h2 {
+  font-size: 18px; /* Define o tamanho da fonte do título */
+  margin-bottom: 10px; /* Adiciona um espaço abaixo do título */
+}
+
+.noticia p {
+  font-size: 14px; /* Define o tamanho da fonte do parágrafo */
+  line-height: 1.5; /* Define o espaçamento entre as linhas */
+  margin-bottom: 10px; /* Adiciona um espaço abaixo do parágrafo */
+}
+
+.noticia a {
+  color: blue; /* Define a cor do link */
+  text-decoration: none; /* Remove o sublinhado padrão do link */
+  font-weight: bold; /* Define o peso da fonte do link */
+}
+
+.noticia a:hover {
+  text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse sobre o link */
+}
+
+.leia-mais {
+  color: blue; /* Cor do link */
+}
+
+.noticias {
+  margin-bottom: 60px; /* Adicione espaço suficiente para o rodapé */
+}
+
+.noticia img {
+  width: 100%; /* Para garantir que a imagem ocupe toda a largura do contêiner */
+  height: auto; /* Para manter a proporção da imagem */
+  max-width: 400px; /* Largura máxima da imagem */
+}
+
+.hidden {
+  display: none;
+   /* Mantém as seções ocultas sobrepostas */
+  background-color: #fff; /* Adiciona um fundo branco para melhor visibilidade */
+  padding: 10px; /* Adiciona algum espaço ao redor das seções ocultas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destacar as seções ocultas */
+}
+
+
+
+/* Estilo para o título h1 */
+h2 {
+  margin-top: 20px; /* Adiciona espaço acima do título */
+  font-size: 24px; /* Tamanho da fonte */
+}
+
+/* Estilo para o parágrafo p */
+p {
+  font-size: 16px; /* Tamanho da fonte */
+  line-height: 1.5; /* Espaçamento entre linhas */
+}
+  
+
+
+/* Estilos para telas menores */
+@media only screen and (max-width: 767px) {
+  /* Estilos para o cabeçalho */
+  header {
+    padding: 20px; /* Reduz o preenchimento do cabeçalho */
+  }
+
+  /* Estilos para a seção de notícias */
+  .noticias {
+    flex-direction: column; /* Empilha as notícias verticalmente */
+    align-items: center; /* Centraliza as notícias verticalmente */
+  }
+
+  .noticia {
+    width: 100%; /* Define a largura das notícias como 100% */
+    margin: 20px 0; /* Adiciona margem apenas na parte superior e inferior */
+  }
+}
+
+
+
+/* body { font-family: Arial, sans-serif; } */
+  /* #transcription { white-space: pre-wrap; } */
